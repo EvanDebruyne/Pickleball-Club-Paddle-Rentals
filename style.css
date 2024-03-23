@@ -32,14 +32,13 @@ label {
     margin-bottom: 5px;
 }
 
-input[type="tel"],
-input[type="email"],
-input[type="text"] {
+input[type="tel"], input[type="email"], input[type="text"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1em;
+    box-sizing: border-box; /* Add this line */
 }
 
 button {
@@ -72,4 +71,3 @@ button:hover {
 .social-links i {
     margin-right: 8px;
 }
-
