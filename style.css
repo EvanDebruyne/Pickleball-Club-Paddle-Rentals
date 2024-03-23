@@ -2,7 +2,7 @@ body, html {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #E92323; /* Updated to specified red color */
 }
 
 .container {
@@ -11,20 +11,20 @@ body, html {
     padding: 20px;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    text-align: center; /* Center align container content */
+    text-align: center; /* Keeps container content centered */
 }
 
 h1 {
     color: #333;
-    font-family: 'Courier New', Courier, monospace; /* Change font family */
-    font-weight: bold; /* Make it bold */
-    font-size: 2em; /* Make it larger */
-    margin-bottom: 20px; /* Increase spacing below the title */
+    font-family: 'Courier New', Courier, monospace; /* Enhances the title font */
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 .form-group {
     margin-bottom: 20px;
-    text-align: left; /* Align form fields to left */
+    text-align: left; /* Ensures form fields are aligned to the left */
 }
 
 label {
@@ -39,7 +39,7 @@ input[type="text"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 1em; /* Adjust input text size as needed */
+    font-size: 1em;
 }
 
 button {
@@ -57,19 +57,19 @@ button:hover {
 }
 
 .social-links {
-    margin-top: 30px; /* Increase spacing above the social links */
+    margin-top: 30px;
     display: flex;
-    justify-content: space-around; /* Space out links */
-    font-size: 1.5em; /* Increase font size for links */
+    justify-content: center; /* Centers social links */
+    font-size: 1.5em; /* Increases font size for better visibility */
+    gap: 20px; /* Adds space between links */
 }
 
 .social-links a {
     color: #007bff;
     text-decoration: none;
-    margin: 0 15px; /* Increase spacing between links */
-    display: inline-block;
 }
 
 .social-links i {
     margin-right: 8px;
 }
+
