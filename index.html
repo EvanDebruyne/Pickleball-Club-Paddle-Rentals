@@ -5,76 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pickleball Club Paddle Rental</title>
     <link rel="stylesheet" href="style.css">
-<script src="https://kit.fontawesome.com/9cbb2b1043.js" crossorigin="anonymous"></script>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <script src="https://kit.fontawesome.com/9cbb2b1043.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <h1> UGA Pickleball Club Paddle Rentals</h1>
-        <form id="rentalForm">
-            <div class="form-group">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" required>
+        <h1>UGA Pickleball Club Paddle Rentals</h1>
+        <!-- Logo Image -->
+        <img src="C:\Users\ethan\Downloads\IMG_2982.PNG" alt="UGA Pickleball Club Logo" class="club-logo">
+        <!-- End Logo Image -->
+        <div class="forms-container">
+            <div class="form-column">
+                <h2>Check In</h2>
+                <a class="bounce" href="YOUR_GOOGLE_FORM_LINK_FOR_CHECK_IN" target="_blank">Access Check In Form <i class="fas fa-arrow-right"></i></a>
             </div>
-            <div class="form-group">
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" required>
+            <div class="form-column">
+                <h2>Returns</h2>
+                <a class="bounce" href="YOUR_GOOGLE_FORM_LINK_FOR_RETURNS" target="_blank">Access Returns Form <i class="fas fa-arrow-right"></i></a>
             </div>
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="studentNumber">Student Number:</label>
-                <input type="text" id="studentNumber" name="studentNumber" required>
-            </div>
-            <div class="form-group">
-                <label for="paddleNumber">Paddle Number:</label>
-                <input type="text" id="paddleNumber" name="paddleNumber" required>
-            </div>
-            <button type="submit">Submit</button>
-
-<div class="social-links">
-    <a href="https://www.instagram.com/pickleballclubuga/" target="_blank" title="Follow us on Instagram">
-        <i class="fab fa-instagram fa-bounce"></i> Follow us on Instagram
-    </a>
-    <a href="https://linktr.ee/pickleballclubuga" target="_blank" title=" Involvment, Events, Contact us">
-        <i class="fa-solid fa-link fa-bounce"></i> LinkTree
-    </a>
-</div>
-
-        </form>
+        </div>
     </div>
-    <script>
-        document.getElementById('rentalForm').addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent the default form submission
-
-            // Capture the user inputs from the form
-            var firstName = document.getElementById('firstName').value;
-            var lastName = document.getElementById('lastName').value;
-            var phone = document.getElementById('phone').value;
-            var email = document.getElementById('email').value;
-            var studentNumber = document.getElementById('studentNumber').value;
-            var paddleNumber = document.getElementById('paddleNumber').value;
-
-            // Construct the URL for the Google Form with the user inputs
-            var preFilledUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfMr_V_PGg9N9z0etGyx7_OSQ7SKtbCDL0zc98NLq_0vjWoZw/viewform?usp=pp_url" +
-                               "&entry.527852241=" + encodeURIComponent(firstName) +
-                               "&entry.1946259462=" + encodeURIComponent(lastName) +
-                               "&entry.1071601563=" + encodeURIComponent(phone) +
-                               "&entry.623638827=" + encodeURIComponent(email) +
-                               "&entry.1098437741=" + encodeURIComponent(studentNumber) +
-                               "&entry.2120286505=" + encodeURIComponent(paddleNumber);
-
-            // Redirect the user to the pre-filled Google Form
-            window.location.href = preFilledUrl;
-        });
-    </script>
 </body>
 </html>
+
