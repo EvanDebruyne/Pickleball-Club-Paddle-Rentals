@@ -25,14 +25,13 @@ h1 {
 }
 
 .club-logo {
-    max-width: 25%; /* to ensure it is responsive and fits the container */
+    max-width: 100%; /* Adjusted for better responsiveness */
     height: auto; /* maintain aspect ratio */
     margin-top: 20px; /* space between the title and the logo */
     display: block; /* to center the logo */
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .form-column {
     width: 45%;
@@ -63,5 +62,21 @@ a.bounce i {
     }
     60% {
         transform: translateY(-15px);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* More screen space usage on small devices */
+    }
+
+    .form-column {
+        width: 100%; /* Stack forms vertically */
+        margin-bottom: 20px; /* Add some space between stacked forms */
+    }
+
+    h1, .form-column h2 {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
     }
 }
