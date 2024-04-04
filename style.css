@@ -1,76 +1,67 @@
 body, html {
-    font-family: 'Courier New', Courier, monospace; /* Apply the title font to all text */
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    background-color: #E92323; /* Updated to specified red color */
+    text-align: center; /* Center the title and content */
 }
 
 .container {
-    max-width: 600px;
+    width: 80%;
     margin: 20px auto;
     padding: 20px;
-    background-color: white;
+    background-color: #ff3333; /* Red background */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    text-align: center; /* Keeps container content centered */
 }
 
 h1 {
     color: #333;
-    font-weight: bold;
-    font-size: 2em;
     margin-bottom: 20px;
 }
 
-.form-group {
-    margin-bottom: 20px;
-    text-align: left; /* Ensures form fields are aligned to the left */
-}
-
-label, input, button, a { /* Ensure all text uses the title font */
-    font-family: 'Courier New', Courier, monospace;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="tel"], input[type="email"], input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1em;
-    box-sizing: border-box; /* Add this line */
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1em;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-.social-links {
-    margin-top: 30px;
+.forms-container {
     display: flex;
-    justify-content: center; /* Centers social links */
-    font-size: 1.5em; /* Increases font size for better visibility */
-    gap: 20px; /* Adds space between links */
+    justify-content: space-around;
+    text-align: center; /* Center content within columns */
 }
 
-.social-links a {
-    color: #007bff;
+.club-logo {
+    max-width: 25%; /* to ensure it is responsive and fits the container */
+    height: auto; /* maintain aspect ratio */
+    margin-top: 20px; /* space between the title and the logo */
+    display: block; /* to center the logo */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.form-column {
+    width: 45%;
+}
+
+.form-column h2 {
+    font-size: 1.5em;
+    color: #fff; /* White text for visibility against red background */
+}
+
+a.bounce {
+    color: white;
     text-decoration: none;
+    display: inline-block;
 }
 
-.social-links i {
-    margin-right: 8px;
+a.bounce i {
+    margin-left: 8px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
 }
