@@ -2,14 +2,14 @@ body, html {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    text-align: center; /* Center the title and content */
+    text-align: center; 
 }
 
 .container {
     width: 80%;
     margin: 20px auto;
     padding: 20px;
-    background-color: #ff3333; /* Red background */
+    background-color: #ff3333; 
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -21,14 +21,13 @@ h1 {
 .forms-container {
     display: flex;
     justify-content: space-around;
-    text-align: center; /* Center content within columns */
-}
+    text-align: center; 
 
 .club-logo {
-    max-width: 100%; /* Adjusted for better responsiveness */
-    height: auto; /* maintain aspect ratio */
-    margin-top: 20px; /* space between the title and the logo */
-    display: block; /* to center the logo */
+    max-width: 100%; 
+    height: auto; 
+    margin-top: 20px; 
+    display: block; 
     margin-left: auto;
     margin-right: auto;
 }
@@ -39,7 +38,7 @@ h1 {
 
 .form-column h2 {
     font-size: 1.5em;
-    color: #fff; /* White text for visibility against red background */
+    color: #fff; 
 }
 
 a.bounce {
@@ -68,15 +67,22 @@ a.bounce i {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .container {
-        width: 95%; /* More screen space usage on small devices */
+        width: 95%; 
+        margin: 10px auto; 
+        padding: 10px; 
     }
 
     .form-column {
-        width: 100%; /* Stack forms vertically */
-        margin-bottom: 20px; /* Add some space between stacked forms */
+        width: 100%; 
+        margin-bottom: 20px;
     }
 
     h1, .form-column h2 {
-        font-size: 1.2em; /* Adjust font size for smaller screens */
+        font-size: 1.2em; 
+    }
+
+    .club-logo {
+        margin-top: 10px; 
     }
 }
+
