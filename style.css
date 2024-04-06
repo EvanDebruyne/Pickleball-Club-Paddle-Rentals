@@ -51,6 +51,23 @@ a.bounce i {
     margin-left: 8px;
     animation: bounce 2s infinite;
 }
+/* Existing styles above... */
+
+a.bounce {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px; /* Add padding around the text */
+    border-radius: 8px; /* Rounded corners for the boxes */
+    background-color: #007bff; /* A distinct background color */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+a.bounce:hover {
+    background-color: #0056b3; /* Darker shade on hover for better interaction feedback */
+}
+
+/* Rest of the CSS... */
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
